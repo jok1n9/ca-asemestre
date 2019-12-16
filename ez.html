@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Caça ao Semestre</title>
+  <style>
+			body{
+				padding: 0;
+				margin: 0;
+				font-family: Helvetica, sans;
+				overflow: hidden;
+			}
+			.header {
+				width: 100%;
+				text-align: center;
+				position: absolute;
+				color: white;
+				z-index: 1;
+			}
+			.bg{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+			}
+		</style>
+    <script type="text/javascript" src="duckhunt.js"></script>
+    </head>
+    <body onload="inicio()" onclick="flickBg()">
+		<audio autoplay=""><source src="intro.mp3" type="audio/mpeg"></audio>
+		<div class="header">
+			<h1>Caça ao Semestre</h1>
+
+			<h2 id="score">Falhados: 0 Atingidos: 0</h2>
+		</div>
+		<img class="bg" id="bg" src="ua.jpg" style="filter: invert(0);">
+		<img id="alvo" src="nove.png" style="z-index: 5; width: 64px; height: 64px; position: absolute; display: none; left: 0px; top: 0px;">
+
+
+</body>
+</html>
